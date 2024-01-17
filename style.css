@@ -3,6 +3,10 @@
     --font-size: 16px;
 }
 
+body{
+    background-color: aqua;
+}
+
 .bg {
     background: url(/images/bg.png);
 }
