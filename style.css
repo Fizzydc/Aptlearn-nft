@@ -1,14 +1,25 @@
-* {
+*html {
 
     --font-size: 16px;
+    --ButtonColor: #4f7dfd;
+    --background: #242133
 }
 
+
+
 body{
-    background-color: aqua;
+    background-color: var(--background);
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
 }
 
 .bg {
     background: url(/images/bg.png);
+    max-height: 800px;
+    min-height: 100vh;
 }
 
 .nav {
@@ -33,11 +44,44 @@ body{
     cursor: pointer;
 }
 
+.section-1 > section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.section-1 > section:last-of-type {
+    align-items: center;
+}
+
+
 .section-1 {
     display: flex;
     gap: 50px;
-    margin-top: 50px;
+    
     align-items: center;
+    justify-content: center;
+    max-width: 140px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.section-1 .Collectibles {
+    color: var(--ButtonColor);
+}
+
+.section-1 p:first-of-type {
+    font-size: 3rem;
+
+}
+
+.section-1 a {
+    color: var(--ButtonColor);
+    border: 1px solid var(--ButtonColor);
+    padding: 5px 1opx;
+    border-radius: 20px;
+    text-align: center;
     justify-content: center;
 }
 
